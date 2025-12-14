@@ -21,6 +21,7 @@ Create a file named .env (or set environment variables) and store your key:
 
 # .env file
 APOLLO_API_KEY="YOUR_APOLLO_API_KEY_HERE"
+
 4. Usage
 Input:
 
@@ -28,16 +29,20 @@ Create an input file (e.g., input_linkedin.txt) with one LinkedIn profile URL pe
 
 # input_linkedin.txt
 https://www.linkedin.com/in/john-doe-example
+
 https://www.linkedin.com/in/jane-smith-sample
+
 ...
 Run the script:
 
 Bash
 
 python apollo_extractor.py
+
 Output: The results will be exported to a file named apollo_contact_data.csv.
 
 5. Technical Logic & Mobile Optimization 📱 (Key Priority)
+   
 The script implements a two-stage enrichment strategy to maximize mobile number retrieval while managing costs:
 
 Initial Lookup (API Endpoint: v1/people/match):
